@@ -10,6 +10,10 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+}
 html{
     height: 100%;
 }
@@ -29,7 +33,10 @@ button{
     font: inherit;
     background-color: transparent;
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    color: #ffffff;
 }
 p{
     color: rgb(255, 255, 255);
@@ -91,7 +98,6 @@ h1{
     font-size: 60px;
     line-height: 120px;
 }
-
 /*================================================*/
 
 .header {
@@ -104,6 +110,10 @@ h1{
 .header-container{
     display: flex;
     align-items: center;
+}
+.header-container svg:hover{
+    fill: #BDAE82;
+    transition: all 0.3s ease 0s;
 }
 .nav-list {
     margin-left: auto;
@@ -122,17 +132,47 @@ h1{
 .header-language {
     padding: 0px 0px 0px 25px;
 }
+.en{
+    color: #ffffff;
+}
+.ru{
+    color: #ffffff;
+}
+.en:focus{
+    color: #BDAE82;
+    transition: all 0.3s ease 0s;
+}
+.ru:focus{
+    color: #BDAE82;
+    transition: all 0.3s ease 0s;
+}
 .header-language span{
     color: rgb(255, 255, 255);
-}
-.en {
-}
-.ru {
 }
 .header-container svg{
     width: 50px;
     height: 50px;
     fill: rgb(255, 255, 255);
+}
+.header-theme{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.icon-dark.light{
+    display: block;
+}
+.icon-dark{
+    display: none;
+    fill: #BDAE82;
+    transition: all 0.3s ease 0s;
+}
+.icon-sun{
+    display: block;
+}
+.icon-sun.light{
+    display: none;
+    fill: #BDAE82;
+    transition: all 0.3s ease 0s;
 }
 /*================================================*/
 .header-burger{
@@ -261,7 +301,7 @@ h1{
     text-align: center;
     margin-bottom: 60px;
 }
-.portfolio-button button{
+.portfolio-but{
     background-color: #000000;
     color: #BDAE82;
     width: 220px;
@@ -270,13 +310,19 @@ h1{
     line-height: 40px;
     border: 2px solid #BDAE82;
 }
-.portfolio-button button:focus{
+.portfolio-but:hover{
+    color: #ffffff;
+}
+.portfolio-but:focus{
     background-color: #BDAE82;
     color: rgb(0, 0, 0);
     width: 220px;
     height: 55px;
     font-size: 20px;
     line-height: 40px;
+}
+.portfolio-but:focus:hover{
+    color: #ffffff;
 }
 .portfolio-photo {
     display: grid;
@@ -325,6 +371,10 @@ h1{
     height: 130px;
     fill: rgb(255, 255, 255);
     transform: translate(-50%, -50%);
+}
+.video-picture svg:hover{
+    fill: #BDAE82;
+    transition: all 0.3s ease 0s;
 }
 @media (max-width: 767px){
     .video-title{
@@ -392,6 +442,10 @@ h1{
     font-size: 20px;
     line-height: 40px;
     margin: 41px 0px;
+}
+.item-button button:hover{
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
 }
 @media (max-width: 767px){
     .price-list{
@@ -468,6 +522,9 @@ h1{
     font-size: 20px;
     line-height: 40px;
 }
+.contacts-form button:hover{
+    color: #ffffff;
+}
 @media (max-width: 767px){
     .contacts-form{
         padding: 40px 0px 41px 0px;
@@ -525,6 +582,10 @@ h1{
     width: 32px;
     height: 32px;
     fill: #ffffff;
+}
+.footer-icon svg:hover{
+    fill: #BDAE82;
+    transition: all 0.3s ease 0s;
 }
 @media (max-width: 767px){
     .footer-container{
